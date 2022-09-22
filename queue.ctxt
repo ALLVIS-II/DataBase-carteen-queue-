@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=queue
+comment0.text=\r\n\r\n\ @author\ (Alvis)\r\n\ @version\ (28/06/2022)\r\n
+comment1.params=
+comment1.target=queue()
+comment2.params=name
+comment2.target=void\ enqueue(people)
+comment3.params=
+comment3.target=people\ dequeue()
+comment4.params=
+comment4.target=boolean\ queueEmpty()
+numComments=5
