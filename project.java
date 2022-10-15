@@ -7,8 +7,8 @@ import java.util.Scanner;
 
 public class project {
     final String myFile = "arrivals.txt";
-    public int student_served = 0;
-    public int teacher_served = 0;
+    public int student_served = 0;//use it in std calculation
+    public int teacher_served = 0;//use it in tchr calculation
     int Teacher_served = 0;
 
     final int Maxline = 70;
