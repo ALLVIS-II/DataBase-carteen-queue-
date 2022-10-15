@@ -5,9 +5,11 @@
 import java.io.File;
 import java.util.Scanner;
 
-
 public class project {
     final String myFile = "arrivals.txt";
+    public int student_served = 0;
+    public int teacher_served = 0;
+    int Teacher_served = 0;
 
     final int Maxline = 70;
     final int object = 4;
@@ -21,7 +23,7 @@ public class project {
         try {
             Scanner readfile = new Scanner(readTheFile);
             String writeFile = readfile.nextLine();
-            //System.out.println(writeFile);
+            // System.out.println(writeFile);
             while (readfile.hasNextLine()) {
                 System.out.println(readfile.nextLine());
             }
@@ -92,42 +94,39 @@ public class project {
                         people served = cafe.dequeue();
 
                         if (served.isStd()) {
-                            served.result();
+                            served.result();// how many student get into the queue and when they have been served
+                            System.out.println("Average waiting time of student "+ String.format(" ",(student_served > 0)?studentNumber*1.0/student_served:0.00));// ??
+                            // How many people get into the queue and when they have been served
+                            // How many people(std,tchr) have been served in the queue
                         }
 
                         if (served.isTchr()) {
-                            served.resultII();
+                            served.resultII();// how many teacher get into the queue
+                            System.out.println("Average waiting time of teacher "+ String.format(" ", (teacher_served > 0)? stuffNumber*1.0 / teacher_served:0.00) );
+
                         }
 
-                        if (z == servedNumber){
+                        if (z == servedNumber) {
                             int sum = studentNumber + stuffNumber - stuffNumber;
-                            System.out.println("In "+number+"min(s), "+sum+" people are hungry!");
+                            System.out.println("In " + number + "min(s), " + sum + " people are hungry!");
+                            System.out.println(" ");
+                        }
+                        if (z == servedNumber) {
+                            System.out.println("-----------------------------------------------------------------------------");
+                            System.out.println(" ");
+                            System.out.println("In the " + number + " min(s), the average wait time of student is ");
+                            System.out.println("In the " + number + " min(s), the average wait time of student is ");
                         }
                     }
-
 
                 } catch (Exception E) {
                     System.out.println(E);
                 }
             }
-            System.out.println("In the final cauculation, the average number of people hungry is 4 people (4.4166666...)");
-
-            /**
-             * System.out.println(Time);
-             * //System.out.println(studentsArriving);
-             * //System.out.println(stuffArriving);
-             * //System.out.println(peopleServed);
-             **/
-            // first line, First min,nextline, next min
-            /**
-             * System.out.println("At the "+Time+"min(s) "+studentsArriving+" student
-             * arrived");
-             * System.out.println(" ");
-             * System.out.println("At the "+Time+"min(s) "+stuffArriving+" stuff arrived");
-             * System.out.println(" ");
-             * System.out.println("At the "+Time+"min(s) "+peopleServed+" people served");
-             * System.out.println(" ");
-             **/
+            //System.out.println(
+                    //"In the final cauculation, the average time of student waiting time is 1.2 (1.29353233831)");
+            ///System.out.println(
+                    //"In the final cauculation, the average time of teacher waiting time is 1.9 (1.90909090909)");
 
         }
 
@@ -135,9 +134,8 @@ public class project {
             System.out.println(E);
         }
     }
-        public static void main(String[] args) {
+
+    public static void main(String[] args) {
         project project = new project();
     }
-    }
-
-
+}
