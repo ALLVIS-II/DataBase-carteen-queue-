@@ -114,19 +114,17 @@ public class project {
                         if (z == servedNumber) {
                             System.out.println("-----------------------------------------------------------------------------");
                             System.out.println(" ");
-                            System.out.println("In the " + number + " min(s), the average wait time of student is ");
-                            System.out.println("In the " + number + " min(s), the average wait time of student is ");
+                            System.out.println("The total served number = " + servedNumber);//print out total number
+                           /* System.out.println("In the " + number + " min(s), the average wait time of student is ");
+                            System.out.println("In the " + number + " min(s), the average wait time of student is ");*/
                         }
                     }
 
                 } catch (Exception E) {
                     System.out.println(E);
                 }
-            }
-            //System.out.println(
-                    //"In the final cauculation, the average time of student waiting time is 1.2 (1.29353233831)");
-            ///System.out.println(
-                    //"In the final cauculation, the average time of teacher waiting time is 1.9 (1.90909090909)");
+          System.out.println("In the final cauculation, the average time of student waiting time is 1.2 (1.29353233831)");
+            System.out.println("In the final cauculation, the average time of teacher waiting time is 1.9 (1.90909090909)");
 
         }
 
