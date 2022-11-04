@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Converter
+comment0.text=\r\n\ @author\ (Alvis)\r\n\ @version\ (2/08/2023)\r\n
+comment1.params=putln
+comment1.target=Converter(people)
+comment2.params=followingMe
+comment2.target=void\ setFollows(Converter)
+comment3.params=
+comment3.target=Converter\ getFollows()
+comment4.params=
+comment4.target=people\ getValue()
+numComments=5
