@@ -125,25 +125,21 @@ public class project {
 
                         
                         if (z == servedNumber) {
-                            System.out.println("-----------------------------------------------------------------------------");
-                            System.out.println(" ");
-                            System.out.println("Total served = "+ servedNumber);
+                            System.out.println("-----------------------------------------------------------------------------\n");
+                            System.out.println("Total served = "+ servedNumber + "\n");
                             
                         }
-                        System.out.println("");
-                        System.out.println("In "+number+ " min(s)");
-                        System.out.println("");
-                        System.out.println("Student result");
-                        System.out.println("");
+                        
+                        System.out.println("In "+number+ " min(s)\n");
+                        System.out.println("Student result\n");
                         System.out.println(studentNumber + " student come");
                         System.out.println("average wait time :" + (float)student_wait / student_served);
                         System.out.println("Total served of student : " + student_served);
-                        System.out.println("total amount of student wait : " + student_wait);
+                        System.out.println("total amount of student wait : " + student_wait + "\n");
                         
                         
-                        System.out.println("");
-                        System.out.println("Teacher result");
-                        System.out.println("");
+                        
+                        System.out.println("Teacher result\n");
                         System.out.println(stuffNumber + " teacher come");
                         System.out.println("average wait time :" + (float)teacher_wait / teacher_served);
                         System.out.println("Total served of teacher : " + teacher_served);
