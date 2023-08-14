@@ -4,9 +4,9 @@
  */
 
 public class people {
-    private int tm;
-    private boolean tchr;
-    private boolean std;
+    private int tm; // time
+    private boolean tchr; //teacher
+    private boolean std; // student
     // private boolean done;
     // private String tchr;
 
